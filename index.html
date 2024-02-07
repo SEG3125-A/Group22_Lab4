@@ -37,6 +37,7 @@
             <div class="col-md-8">
               <h1>Bike & Breeze</h1>
               <h3>Bike repair shop</h3>
+              <h5>25 Hawthorne Ave, Ottawa, ON K1S 0A9</h5>
               <p>Biking Bliss Begins Here!</p>
             </div>
             <div class="col-md-4">
@@ -47,12 +48,12 @@
 
     <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
     <!-- It can be useful for placement of information -->
-    <div class="row p-3">
-        <div class="col-sm-3 pl-5">Service</div>
-        <div class="col-sm-3">Calendar</div>
-        <div class="col-sm-3">Payment</div>
-        <div class="col-sm-3">Where to find us</div>
-    </div>
+    <!--<div class="row p-3">-->
+        <!--<div class="col-sm-3 pl-5">Service</div>-->
+        <!--<div class="col-sm-3">Calendar</div>-->
+       <!--<div class="col-sm-3">Payment</div>-->
+        <!--<div class="col-sm-3">Where to find us</div>-->
+    <!-- </div>-->
 
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
     <div class="container-md p-3 my-3 border bg-light text-success">
@@ -67,12 +68,13 @@
     <div class="container">
         <h2>Service description</h2>
         <p>Here is a list of services offered</p>            
-        <table class="table table-primary table-hover">
+        <table class="table table-primary table-image">
             <thead>
             <tr>
                 <th>Service</th>
                 <th>Description</th>
                 <th>Price</th>
+                <th></th>
             </tr>
             </thead>
             <tbody> 
@@ -80,26 +82,31 @@
                 <td>Tune-Ups</td>
                 <td>Maintain your bike to make sure it stays in good working condition.</td>
                 <td>$60</td>
+                <td><img class="img-fluid" src="images/tune up.webp" alt="Card image"></td>
             </tr>
             <tr>
                 <td>Flat Tire Repair</td>
                 <td>Fixing or replacing your tires</td>
                 <td>$40</td>
+                <td><img class="img-fluid" src="images/flat tire.jpg" alt="Card image"></td>
             </tr>
             <tr>
                 <td>Chain Maintenance</td>
                 <td>Cleaning or replacing chains</td>
                 <td>$40</td>
+                <td class="w-25"><img class="img-fluid" src="images/chain.avif" alt="Card image"></td>
             </tr>
             <tr>
                 <td>Brake Adjustments and Repairs</td>
                 <td>Adjusting brake pads and replacing brake cables</td>
                 <td>$40</td>
+                <td><img class="img-fluid" src="images/brakes.jpg" alt="Card image"></td>
             </tr>
             <tr>
                 <td>Custom Builds</td>
                 <td>Let our experts customize your bike to your vision</td>
                 <td>$100 - $5,000</td>
+                <td><img class="img-fluid" src="images/custom.jpg" alt="Card image"></td>
             </tr>
             </tbody>
         </table>
@@ -137,7 +144,7 @@
         <h3>Meet our mechanics!</h3>
         <div class="card-columns">
             <div class="card card-emp1" style="width:200px">
-                <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/Jules.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">Jules</h4>
                     <p class="card-text">Specialty: tune-ups and customizations</p>
@@ -148,7 +155,7 @@
                 </div>
             </div>
             <div class="card card-emp2" style="width:200px">
-                <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/Mike.png" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">Mike</h4>
                     <p class="card-text">Specialty: Tire, chain and brake repairs.</p>
@@ -296,6 +303,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary " data-dismiss="modal">Submit</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>     
